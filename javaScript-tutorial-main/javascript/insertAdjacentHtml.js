@@ -1,0 +1,5 @@
+const todoList = document.querySelector(".todo-list")
+// todoList.insertAdjacentHTML("beforeend", "<li> hello world</li>")
+// todoList.insertAdjacentHTML("afterbegin", "<li> hello world</li>")
+// todoList.insertAdjacentHTML("beforebegin", "<li> hello world</li>")
+todoList.insertAdjacentHTML("afterend", "<li> hello world</li>")
