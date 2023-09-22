@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="crud.css">
+    <script src="crud.js" defer></script>
+    <title>crud app</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>
+                <form autocomplete="off" onsubmit="onFormSubmit()">
+                    <div>
+                        <label for="productCode">productCode</label>
+                        <input type="text" name="productCode" id="productCode">
+                    </div>
+                    <div>
+                        <label for="productName">productName</label>
+                        <input type="text" name="productName" id="productName">
+                    </div>
+                    <div>
+                        <label for="quantity">quantity</label>
+                        <input type="number" name="quantity" id="quantity">
+                    </div>
+                    <div>
+                        <label for="perPrice">perPrice</label>
+                        <input type="number" name="perPrice" id="perPrice">
+                    </div>
+                    <div class="form_action--button">
+                        <input type="submit" value="submit">
+                        <input type="reset" value="reset">
+                    </div>
+                </form>
+                <th>
+                    <table class="list" id="storeList">
+                        <thead>
+                            <tr>
+                                <th>productCode</th>
+                                <th>productName</th>
+                                <th>quantity</th>
+                                <th>perPrice</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                        </tbody>
+                    </table>
+                </td>
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
